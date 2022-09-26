@@ -1,0 +1,163 @@
+/* global selector  */
+
+*{
+    margin: 0%;
+    padding: 0%;
+    /* line-height: 20px; */
+}
+body{
+    overflow-x: hidden;
+}
+
+.container-fluid{
+    padding: 0 0;
+
+}
+
+/* navigation bar  */
+
+.navigation-bar{
+    font-size: 14px;
+}
+
+/* background image 1  */
+.tesla-background-image{
+    height: 715px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.tesla-background-image1{
+    background-image: url("images/asset 0.jpeg");
+}
+
+/* background image 2  */
+
+.tesla-background-image2{
+    background-image: url("images/asset 1.jpeg");
+}
+
+/* background image 3 */
+
+.tesla-background-image3{
+    background-image: url("images/asset 2.jpeg");
+}
+
+/* background image 4 */
+
+.tesla-background-image4{
+    background-image: url("images/asset 3.jpeg");
+}
+
+/* background image 5 */
+
+.tesla-background-image5{
+    background-image: url("images/asset 4.jpeg");
+}
+
+/* background image 6 */
+
+.tesla-background-image6{
+    background-image: url("images/asset\ 5.webp");
+}
+
+/* background image 7 */
+
+.tesla-background-image7{
+    background-image: url("images/asset 6.jpeg");
+}
+
+.check-activate{
+    display: none;
+    top: -15px;
+    right: 0px;
+    width: 300px;
+    background-color: white;
+    list-style-type: none;
+    z-index: 2;
+}
+li.list-group-item.all-list {
+    height: 51px;
+    margin: 0 40px;
+
+}
+#check-menu:checked ~ ul{
+    display: block;
+}
+#check-menu:checked ~ label{
+    position: absolute !important;
+    z-index: 3;
+}
+
+.events{
+    height: 100px;
+    top: 450px;
+    margin-left: 8%;
+
+}
+
+
+.bg-secondary {
+    background-color: #b0b3b6!important;
+}
+
+
+.accessories{
+    height: 50px;
+    top: 33pc;
+}
+
+/* footer  */
+
+footer.container-fluid {
+    height: 50px;
+}
+ul.list-group.list-group-horizontal{
+    margin:0 24%;
+    font-size: 14px;
+}
+.items{
+    width: 150px;
+    list-style-type: none;
+    height: 50px;
+    text-align: center;
+}
+
+/* responsive  */
+
+@media(max-width:1200px){
+    .responsive-nav{
+        display: none;
+    }
+    .check-activate{
+        right: -115px;
+    }
+    .text-center{
+        z-index: 0;
+    }
+    .shop-now{
+        margin-left: 28%;
+    }
+    ul.list-group.list-group-horizontal{
+        margin:0 15%;
+    }
+
+}
+@media(max-width:768px){
+    .events{
+        margin:0 10%;
+    }
+    
+    .col-md-2.position-relative.accessories.bg-dark{
+        margin: 0 100px;
+    }
+    b.text-white.shop-now{
+        margin-left: 40% !important;
+    }
+    .footer-responsive{
+        display: none;
+    }
+    ul.list-group.list-group-horizontal{
+        margin:0 5%;
+    }
+}
